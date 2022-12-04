@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "/portfolio-ulisses/static/js/main.47c8e994.js",
+    "static/media/aws.svg": "/portfolio-ulisses/static/media/aws.482ae98bd199aa096dfaa67074122abb.svg",
+    "static/media/nodejs.svg": "/portfolio-ulisses/static/media/nodejs.615ffbea9529ca7047ed8a912bfd94b2.svg",
+    "static/media/dribbble.svg": "/portfolio-ulisses/static/media/dribbble.62521f6d786f6b79a8da02e836e7743c.svg",
+    "static/media/react.svg": "/portfolio-ulisses/static/media/react.a060cbe85e50deda1d61452cee9de5b2.svg",
+    "index.html": "/portfolio-ulisses/index.html",
+    "static/media/linkedin-black.svg": "/portfolio-ulisses/static/media/linkedin-black.a85f9ffb13273a3ad924027f12d372f3.svg",
+    "static/media/android.svg": "/portfolio-ulisses/static/media/android.283f8050b48cba47a2bf0ec1cc5dfadc.svg",
+    "static/media/javascript.svg": "/portfolio-ulisses/static/media/javascript.081325c6f229605dce15142ddd948d6d.svg",
+    "static/media/github-black.svg": "/portfolio-ulisses/static/media/github-black.164d6380702cebaabd3f6f044a8238ec.svg",
+    "static/media/git.svg": "/portfolio-ulisses/static/media/git.43d387b77657117c0e407816cbf72476.svg",
+    "static/media/angular.svg": "/portfolio-ulisses/static/media/angular.f9ef2acacb9c7dcc60c405977c26f5fe.svg",
+    "static/media/typescript.svg": "/portfolio-ulisses/static/media/typescript.f20748caf2dac55710ddeed71de0bac4.svg",
+    "static/media/css3.svg": "/portfolio-ulisses/static/media/css3.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
+    "static/media/html-5.svg": "/portfolio-ulisses/static/media/html-5.c1bb84e022ca9d76984d4b943bd678fd.svg",
+    "main.47c8e994.js.map": "/portfolio-ulisses/static/js/main.47c8e994.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.47c8e994.js"
+  ]
+}
