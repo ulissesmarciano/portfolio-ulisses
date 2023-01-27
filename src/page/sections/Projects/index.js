@@ -4,6 +4,7 @@ import { ProjectItemLeft } from '../../components/ProjectItem/ImgLeft'
 import { Container, SkillContainer, TitleContainer } from './styles'
 
 import PokedexImg from '../../../assets/projectarts/reactpokedex.png'
+import HubkutImg from '../../../assets/projectarts/reacthubkut.png'
 
 const Projects = () => {
   return (
@@ -23,12 +24,13 @@ const Projects = () => {
           img={PokedexImg}
         />
         <ProjectItemLeft 
-          projectType="🥪 SMART SHOPPER"
-          project="Meat Cheese Bread"
-          description="Team-developed project completed while part of The Collab Lab Winter 2021 Cohort. A React PWA bootstrapped with Firestore, deployed to Netlify. The focus of this project was most importantly about collaboration and the inclusion of all voices through best practice workflows with weekly tickets, grooming, and feedback from Senior Devs."
-          href="/"
+          projectType="Ⓜ️ Mídia Social"
+          project="Hubkut"
+          description="Aplicação desenvolvida com Reactjs com o objetivo de treinar habilidades em Typescript e requisições via Axios da api do Github simulando a plataforma do Orkut, que é uma rede de relacionamentos que fez sucesso em meados dos anos 2000. Páginas de requisição de usuário no login, Homepage, Página de repositórios, entre outros foram criadas para a manipulação do ciclo de vida de cada componente."
+          href="https://github.com/ulissesmarciano/projects/tree/main/hubkut"
           tec1="React.js"
-          img="https://kevin-davis.com/static/ccbb985979df477c76be7286f24fed95/64b17/mcb_screens7.jpg"
+          tec2="Typescript"
+          img={HubkutImg}
         />
       </SkillContainer>
     </Container>
