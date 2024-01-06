@@ -16,7 +16,7 @@ const Greetings = () => {
               <WavingHand src={Hand} alt="mão acenando"/>
           </HelloContainer>
           <ResumeTextContainer>
-              <Paragraph><strong>Sou um <span>desenvolvedor front-end</span> e também <span>crio android apps</span></strong>.</Paragraph>
+              <Paragraph><strong>Sou um <span>desenvolvedor front-end</span>, tenho treinamento certificado em <span>back-end</span> e também <span>crio android apps</span></strong>.</Paragraph>
               <p>Conheça um pouco do meu trabalho e fique à vontade para entrar em contato.</p>
           </ResumeTextContainer>
           <ButtonContainer>

@@ -96,15 +96,17 @@ export const ResumeTextContainer = styled.div`
 `
 
 export const Paragraph = styled.div`
-        font-size: 1.2rem;
-        font-weight: 400;
-        margin-bottom: 1rem;
-        line-height: 1.5rem;
+
+
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
 
     @media ( min-width: 768px) {
         font-size: 2rem;
         line-height: 3rem;
-        margin-bottom: 2rem;   
+        margin-bottom: 3rem;   
     }
     
 `
