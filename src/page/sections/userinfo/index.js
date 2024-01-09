@@ -11,8 +11,8 @@ const UserInfo = () => {
   return (
       <Container>
           <AlignContainer>
-          <h3 id='Contato'>Want to get in touch?</h3>
-          <p>Have a project idea? I'd love to collaborate. Drop me a line. 🎣</p>
+          <h3 id='Contato'>Quer entrar em contato?</h3>
+          <p>Tem uma ideia de projeto? Eu adoraria colaborar. Envie uma mensagem. 🎣</p>
           <PhotoEmailContainer>
             <Avatar src="https://avatars.githubusercontent.com/u/104742158?s=400&u=b793765b9ab0c8f5bec5e2c7580678cac6bce511&v=4" alt="Github"/>
             <div>

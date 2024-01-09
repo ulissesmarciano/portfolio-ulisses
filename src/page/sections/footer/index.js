@@ -10,7 +10,7 @@ const Footer = () => {
               <h2>Ulisses Marciano</h2>
           </a>
           <a href="/">
-              <h3>© ULISSES GONÇALVES</h3>
+              <h3>© ULISSES GONÇALVES 2024</h3>
           </a>
       </Container>
     </Wrapper>
