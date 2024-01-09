@@ -14,9 +14,9 @@ const Projects = () => {
       </TitleContainer>
       <SkillContainer>
         <ProjectItemRight
-          projectType="📟 InfoConSulta"
+          projectType="📟 Info Consulta"
           project="PokéDex"
-          description="Projeto desenvolvido com o principal objetivo de aprendizado em requisição de uma api remota, utilizando a função GET para a consulta de itens que projeto são pokémons. Outros métodos testados são de filtragem de busca pelos nomes dos pokémons e aprimoramento em css com aplicação do display grid, flex-box, webkit de aniações entre outros."
+          description="Projeto desenvolvido com o principal objetivo de aprendizado em requisição de uma api remota, utilizando a função GET para a consulta de itens que projeto são pokémons. Outros métodos testados são de filtragem de busca pelos nomes dos pokémons e aprimoramento em css com aplicação do display grid, flex-box, webkit de animações entre outros."
           href="https://github.com/ulissesmarciano/projects/tree/main/pokedex"
           tec1="React.js"
           tec2="React Native"
