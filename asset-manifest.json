@@ -1,6 +1,7 @@
 {
   "files": {
-    "main.js": "/portfolio-ulisses/static/js/main.ca3b3e4d.js",
+    "main.js": "/portfolio-ulisses/static/js/main.68a2ddb0.js",
+    "static/media/siteccem.png": "/portfolio-ulisses/static/media/siteccem.a3e2c440b5645b6321aa.png",
     "static/media/reacthubkut.png": "/portfolio-ulisses/static/media/reacthubkut.4829d34b8c62b319af1d.png",
     "static/media/reactpokedex.png": "/portfolio-ulisses/static/media/reactpokedex.586ebe66d797735ee1e7.png",
     "static/media/aws.svg": "/portfolio-ulisses/static/media/aws.482ae98bd199aa096dfaa67074122abb.svg",
@@ -19,9 +20,9 @@
     "static/media/typescript.svg": "/portfolio-ulisses/static/media/typescript.f20748caf2dac55710ddeed71de0bac4.svg",
     "static/media/css3.svg": "/portfolio-ulisses/static/media/css3.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/html-5.svg": "/portfolio-ulisses/static/media/html-5.c1bb84e022ca9d76984d4b943bd678fd.svg",
-    "main.ca3b3e4d.js.map": "/portfolio-ulisses/static/js/main.ca3b3e4d.js.map"
+    "main.68a2ddb0.js.map": "/portfolio-ulisses/static/js/main.68a2ddb0.js.map"
   },
   "entrypoints": [
-    "static/js/main.ca3b3e4d.js"
+    "static/js/main.68a2ddb0.js"
   ]
 }
