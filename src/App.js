@@ -1,9 +1,9 @@
-import Frontpage from "./page";
+import PortfolioSection from "./page";
 
 function App() {
   return (
     <>
-      <Frontpage />
+      <PortfolioSection />
     </>
   );
 }
