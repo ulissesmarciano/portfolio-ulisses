@@ -9,7 +9,7 @@ export const Globalstyle = createGlobalStyle`
         font-family: Roboto;
         list-style: none;
         text-decoration: none;
-        //scroll-behavior: smooth;
+        scroll-behavior: smooth;
     }
 `
 
