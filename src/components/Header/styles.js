@@ -22,10 +22,6 @@ export const Container = styled.header`
         justify-content: space-between;
    }
 
-   @media (max-width: 1200px){
-        padding: 1.8rem 2rem;
-   }
-
    @media (max-width: 768px){
         .navigation-bar {
             display: none;

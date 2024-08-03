@@ -77,4 +77,30 @@ export const Container = styled.div`
         display: flex;
         gap: 1rem;
     }
+
+    @media (max-width: 1200px){
+        padding: 0 2rem;
+    }
+
+    @media(max-width: 769px){
+
+        .content-section .greeting-screen h3 {
+            font-size: 2rem;
+        }
+
+        .content-section .greeting-screen .summary-sentence {
+            font-size: 1.2rem;
+        }
+
+        .content-section .greeting-screen .summary-sentence span {
+        color: #000;
+    }
+
+    @media(max-width: 425px){
+        .content-section .greeting-screen .contact-section .contact-link-section {
+            gap: .1rem;
+            flex-wrap: wrap;
+        }
+    }
+    }
 `
