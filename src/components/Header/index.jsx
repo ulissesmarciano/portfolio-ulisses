@@ -1,6 +1,7 @@
 import React from 'react';
-import { Container } from './styles';
+import { CloseSidebarIcon, Container } from './styles';
 import LinkItem from '../LinkItem';
+import { FiMenu } from 'react-icons/fi';
 
 const Header = () => {
   return (
@@ -26,10 +27,14 @@ const Header = () => {
           <li>
             <LinkItem
               name="Contato"
+              variant="headerSecondaryLink"
             />
           </li>
         </ul>
       </nav>
+      <CloseSidebarIcon>
+        <FiMenu />
+      </CloseSidebarIcon>
     </Container>
   )
 }
