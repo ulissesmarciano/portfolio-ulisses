@@ -8,8 +8,12 @@ export const Globalstyle = createGlobalStyle`
         box-sizing: border-box;
         font-family: Roboto;
         list-style: none;
-        text-decoration: none;
         scroll-behavior: smooth;
+    }
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
     }
 `
 
