@@ -1,9 +1,9 @@
 import React from 'react'
 import { Container } from './styles'
 
-const LinkItem = ({name}) => {
+const LinkItem = ({name, variant, href}) => {
   return (
-    <Container>
+    <Container variant={variant} href={href}>
         {name}
     </Container>
   )
