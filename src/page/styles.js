@@ -4,16 +4,22 @@ export const Container = styled.div`
     margin: 0 auto;
     max-width: 64rem;
 
-    .content-section {
+    .content-section .greeting-screen {
         padding-bottom: 8rem;
         height: calc(100vh - 98.78px);
 
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
     }
 
     .content-section .greeting-screen h3 {
         margin-bottom: 2.2rem;
+
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
 
         font-size: 2.625rem;
     }
@@ -65,17 +71,21 @@ export const Container = styled.div`
         }
     }
 
-    .content-section .greeting-screen .contact-section p {
+    .content-section .greeting-screen .contact-screen p {
         margin-bottom: 1rem;
 
         font-size: 1.2rem;
         line-height: 1.5rem;
     }
 
-    .content-section .greeting-screen .contact-section .contact-link-section {
+    .content-section .greeting-screen .contact-screen .contact-link-screen {
         
         display: flex;
         gap: 1rem;
+    }
+
+    .about-me-section {
+        background-color: red;
     }
 
     @media (max-width: 1200px){
@@ -94,13 +104,13 @@ export const Container = styled.div`
 
         .content-section .greeting-screen .summary-sentence span {
         color: #000;
-    }
-
-    @media(max-width: 425px){
-        .content-section .greeting-screen .contact-section .contact-link-section {
-            gap: .1rem;
-            flex-wrap: wrap;
         }
-    }
+
+        @media(max-width: 425px){
+            .content-section .greeting-screen .contact-screen .contact-link-screen {
+                gap: .1rem;
+                flex-wrap: wrap;
+            }
+        }
     }
 `
