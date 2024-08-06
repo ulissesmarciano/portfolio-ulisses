@@ -110,6 +110,10 @@ export const Container = styled.section`
     }
 
     @media(max-width: 546px){
+        .content-section .text-section .text-and-image-section {
+            align-items: flex-start;
+        }
+
         .content-section .text-section .text-and-image-section p {
             max-width: 14rem;
         }
