@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
+    margin: 0 auto;
     height: 100vh;
     h3 {
         font-size: 1.75rem;
@@ -9,22 +10,26 @@ export const Container = styled.section`
 
     .content-section {
         display: flex;
+        gap: .4rem;
         justify-content: space-between;
         align-items: center;
     }  
 
-    .text-section {
+    .content-section .text-section {
         max-width: 40rem;
+        width: 70%;
         display: flex;
         flex-direction: column;
         gap: .8rem;
         
         font-size: 1.2rem;
         line-height: 1.8rem;
+        text-align: justify;
     }
 
-    .ilustrated-image-section {
+    .content-section .ilustrated-image-section {
         border-radius: 1rem;
+        width: 100%;
     
         display: flex;
         justify-content: center;
@@ -35,8 +40,89 @@ export const Container = styled.section`
         width: 18rem;
     }
 
-    .ilustrated-image-section img {
+    .content-section .ilustrated-image-section img {
         z-index: -1;
         height: 100%;
     }
-`
+
+    .content-section .text-section .text-and-image-section {
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .content-section .text-section .text-and-image-section p {
+        max-width: 100%;
+    }
+
+    .content-section .text-section .text-and-image-section .ilustrated-image-section-in-text {
+        display: none;
+
+    }
+
+    .content-section .text-section .text-and-image-section .ilustrated-image-section-in-text img {
+        display: none;
+    }
+
+    
+
+    @media(max-width: 1024px) {
+        .content-section .text-section {
+            max-width: 100%;
+        }
+
+        .content-section .text-section .text-and-image-section p {
+            max-width: 100%;
+        }
+    }
+    
+    @media(max-width: 768px){
+        .content-section .text-section {
+            width: 100%;
+        }
+        
+        .content-section .text-section .text-and-image-section p {
+            max-width: 24rem;
+        }
+
+        .content-section .ilustrated-image-section {
+            display: none;
+        }
+
+        .content-section .text-section .text-and-image-section .ilustrated-image-section-in-text {
+            border-radius: 1rem;
+            height: 14rem;
+            width: 10rem;
+                
+            display: flex;
+            justify-content: center;
+            
+            overflow: hidden;
+
+        }
+
+        .content-section .text-section .text-and-image-section .ilustrated-image-section-in-text img {
+            display: block;
+            z-index: -1;
+            height: 100%;
+        }
+    }
+
+    @media(max-width: 546px){
+        .content-section .text-section .text-and-image-section p {
+            max-width: 14rem;
+        }
+    }
+
+    @media(max-width:425px){
+
+        .content-section .text-section .text-and-image-section p {
+            max-width: 100%;
+        }
+        
+        .content-section .text-section .text-and-image-section .ilustrated-image-section-in-text {
+            display: none;
+        }
+    }
+    `
