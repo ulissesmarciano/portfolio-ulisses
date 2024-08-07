@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from './styles';
 
-export const AboutMeSection = () => {
+const AboutMeSection = () => {
   return (
     <Container>
       <h3>Sobre</h3>
@@ -27,5 +27,7 @@ export const AboutMeSection = () => {
         </div>
       </div>
     </Container>
-  )
-}
+  );
+};
+
+export default AboutMeSection;

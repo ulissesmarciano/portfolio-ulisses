@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from './styles';
 import LinkItem from '../LinkItem';
 
-export const GreetingsSection = () => {
+const GreetingsSection = () => {
   return (
     <Container>
         <h3 className='hello-section'>Olá, me chamo Ulisses <span className='waving-hand'>&#128075;</span></h3>
@@ -27,3 +27,5 @@ export const GreetingsSection = () => {
     </Container>
   );
 };
+
+export default GreetingsSection;
