@@ -5,7 +5,13 @@ import ProjectItem from '../ProjectItem';
 const ProjectsSection = () => {
   return (
     <Container>
-        <ProjectItem />
+        <h3>Projetos</h3>
+        <div>
+            <ProjectItem />
+            <ProjectItem />
+            <ProjectItem />
+            <ProjectItem />
+        </div>
     </Container>
 
   );
