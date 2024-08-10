@@ -6,11 +6,11 @@ const ProjectsSection = () => {
   return (
     <Container>
         <h3>Projetos</h3>
-        <div>
+        <div className='project-section'>
             <ProjectItem />
+            <ProjectItem variant='secondary' />
             <ProjectItem />
-            <ProjectItem />
-            <ProjectItem />
+            <ProjectItem variant='secondary' />
         </div>
     </Container>
 

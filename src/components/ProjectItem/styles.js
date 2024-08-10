@@ -1,11 +1,17 @@
 import styled from "styled-components";
+import { css } from "styled-components";
 
 export const Container = styled.div`
     padding: 3rem 0;
 
     display: flex;
+    gap: 1rem;
     align-items: center;
     justify-content: space-between;
+
+    ${({variant}) => variant !== "primary" && css`
+        flex-direction: row-reverse;
+    `}
 
     .info-content {
         max-width: 25rem;
@@ -61,33 +67,36 @@ export const Container = styled.div`
 
     .image-container {
         width: 100%;
-    max-width: 22rem;
-    height: 15rem;
-    margin-bottom: 3rem;
-
-    border-radius: 1rem;
-    box-shadow: rgb(0 0 0 / 16%) 0px 0px 2.5rem;
-
-
-    overflow: hidden;
-
-    img {
-        z-index: -1;
+        max-width: 25rem;
         height: 15rem;
+        margin-bottom: 3rem;
+
+        display: flex;
+        justify-content: center;
+
+        border-radius: 1rem;
+        box-shadow: rgb(0 0 0 / 16%) 0px 0px 2.5rem;
+
+
+        overflow: hidden;
+
+        transition: 500ms;
+
+        &:hover{
+            transition: all 0.2s;
+
+            -webkit-transform: translateY(-2%);
+            transform: translateY(-2%);
+            box-shadow: rgb(0 0 0 / 30%) 0px 0px 2.5rem;
+        }
     }
-    
-    
-    transition: 500ms;
 
-    &:hover{
-        transition: all 0.2s;
-        cursor: pointer;
-
-
-
-        -webkit-transform: translateY(-2%);
-        transform: translateY(-2%);
-        box-shadow: rgb(0 0 0 / 30%) 0px 0px 2.5rem;
+    .image-container img {
+        z-index: -1;
+        width: 24rem;
     }
+
+    @media(max-width: 768px){
+        flex-direction: column-reverse;
     }
 `

@@ -5,9 +5,9 @@ import PokedexImage from "../../assets/projectarts/reactpokedex.png";
 
 import ShareIcon from "../../assets/icons/share-icon.png"
 
-const ProjectItem = () => {
+const ProjectItem = ({variant="primary"}) => {
   return (
-    <Container>
+    <Container variant={variant}>
         <div className='info-content'>
             <h4 className='title'>react pokédex</h4>
             <p>💻 info consulta</p>
