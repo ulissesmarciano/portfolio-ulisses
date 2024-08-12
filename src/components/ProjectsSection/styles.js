@@ -31,6 +31,7 @@ export const Container = styled.section`
                 background: #c1c1c1;
                 border-radius: 1rem;
             }
+
         }
     }
 `
