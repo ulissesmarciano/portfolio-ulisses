@@ -5,6 +5,7 @@ import AboutMeSection from '../components/AboutMeSection'
 import GreetingsSection from '../components/GreetingSection'
 import SkillsSection from '../components/SkillsSection'
 import ProjectsSection from '../components/ProjectsSection'
+import ContactSection from '../components/ContactSection'
 
 const PortfolioSection = () => {
   return (
@@ -15,6 +16,7 @@ const PortfolioSection = () => {
         <AboutMeSection />
         <SkillsSection />
         <ProjectsSection />
+        <ContactSection />
       </main>
     </Container>
   )
