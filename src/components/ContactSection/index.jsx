@@ -1,10 +1,11 @@
 import React from 'react';
+import { Container } from './styles';
 
 const ContactSection = () => {
   return (
-    <section>
+    <Container>
         <h3>Quer entrar em contato?</h3>
-    </section>
+    </Container>
   );
 };
 
