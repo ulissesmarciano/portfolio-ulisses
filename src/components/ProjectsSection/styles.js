@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-    height: 100vh;
+    margin-bottom: 8rem;
 
     h3 {
         font-size: 1.75rem;
