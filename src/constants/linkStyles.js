@@ -74,4 +74,52 @@ export const linkStyles = {
             color: #fff;
         }
     `,
+    
+    greetingsContactLinkIcon: css`
+        padding: .8rem 1.2rem .8rem 1rem;
+        
+        position: relative;
+        overflow: hidden;
+        
+        font-weight: 500;
+        border: 2px solid #000;
+        border-radius: 1rem;
+
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        
+        &:after {
+            content: '';
+            
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            width: 0;
+            height: 100%;
+
+            background-color: #05a1ad;
+            
+            z-index: -1;
+
+            transition: width 200ms ease;
+        }
+
+        &:hover {
+            &:after {
+                width: 100%;
+            }
+            
+            color: #fff;
+            img {
+                filter: invert(100%);
+            }
+        }
+
+        img {
+            height: 1.2rem;
+            width: 1.2rem;
+        }
+    `,
 }
