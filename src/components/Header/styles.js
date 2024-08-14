@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
+    margin: 0 auto;
+    max-width: 64rem;
     padding: 1.9rem 0;
 
     display: flex;
@@ -23,6 +25,7 @@ export const Container = styled.header`
    }
 
    @media (max-width: 768px){
+        padding: 1.2rem 2rem;
         .navigation-bar {
             display: none;
         }
@@ -33,6 +36,10 @@ export const Container = styled.header`
             font-size: 1.4rem;
         }
    }
+
+   @media (max-width: 320px) {
+        padding: 1.2rem 1rem;
+    }
 `
 
 export const CloseSidebarIcon = styled.button`

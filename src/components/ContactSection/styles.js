@@ -19,6 +19,8 @@ export const Container = styled.section`
         display: flex;
         align-items: center;
         gap: 4rem;
+
+        flex-wrap: wrap;
     }
 
     .image-email-container .user-image {
@@ -64,5 +66,15 @@ export const Container = styled.section`
     .contact-buttons-container {
         display: flex;
         gap: 1.5rem;
+
+        flex-wrap: wrap;
+    }    
+
+    @media(max-width: 370px) {
+        .contact-buttons-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: .4rem;
+        }
     }
 `

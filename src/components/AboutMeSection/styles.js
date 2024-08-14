@@ -83,7 +83,7 @@ export const Container = styled.section`
         }
         
         .content-section .text-section .text-and-image-section p {
-            max-width: 24rem;
+            max-width: 18rem;
         }
 
         .content-section .ilustrated-image-section {
@@ -109,21 +109,24 @@ export const Container = styled.section`
         }
     }
 
+    /* VERIFICAR SE HÁ CÓDIGO A MAIS DENTRO DOS BREAKPOINTS */
+
     @media(max-width: 546px){
+        .content-section .text-section .text-and-image-section p {
+            max-width: 100%;
+        }
+
         .content-section .text-section .text-and-image-section {
             align-items: flex-start;
         }
 
-        .content-section .text-section .text-and-image-section p {
-            max-width: 14rem;
+        .content-section .text-section .text-and-image-section .ilustrated-image-section-in-text {
+            display: none;
         }
     }
 
     @media(max-width:425px){
 
-        .content-section .text-section .text-and-image-section p {
-            max-width: 100%;
-        }
         
         .content-section .text-section .text-and-image-section .ilustrated-image-section-in-text {
             display: none;

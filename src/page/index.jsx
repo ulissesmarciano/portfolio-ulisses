@@ -11,7 +11,7 @@ const PortfolioSection = () => {
   return (
     <Container>
       <Header />
-      <main className='content-section'>
+      <main className='main-body'>
         <GreetingsSection />
         <AboutMeSection />
         <SkillsSection />
