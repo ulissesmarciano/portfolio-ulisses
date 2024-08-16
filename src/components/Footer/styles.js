@@ -21,4 +21,12 @@ export const Container = styled.section`
         color: #fff;
         font-size: .875rem;
     }
+
+    @media (max-width: 1200px){
+        padding: 0 2rem;
+    }
+
+    @media (max-width: 320px) {
+        padding: 1.9rem 1rem;
+    }
 `

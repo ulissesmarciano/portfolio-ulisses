@@ -24,6 +24,10 @@ export const Container = styled.header`
         justify-content: space-between;
    }
 
+   @media (max-width: 1200px){
+        padding: 1.9rem 2rem;
+    }
+
    @media (max-width: 768px){
         padding: 1.2rem 2rem;
         .navigation-bar {
