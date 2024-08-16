@@ -3366,6 +3366,11 @@ commondir@^1.0.1:
   resolved "https://registry.npmjs.org/commondir/-/commondir-1.0.1.tgz"
   integrity sha512-W9pAhw0ja1Edb5GVdIF1mjZw/ASI0AlShXM83UUGe2DVr5TdAPEA1OA8m/g8zWp9x6On7gqufY+FatDbC3MDQg==
 
+components@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.npmjs.org/components/-/components-0.1.0.tgz"
+  integrity sha512-4xKUO3dL9LBs8WiOKy2kvLfnwKZLps9xDT5cFS0GL4UiXrr/dNUYus7Uf1bRPG66cUpEmwFAWVOlE9cxQgG+QA==
+
 compressible@~2.0.16:
   version "2.0.18"
   resolved "https://registry.npmjs.org/compressible/-/compressible-2.0.18.tgz"
@@ -7897,10 +7902,10 @@ react-scripts@^5.0.1:
   optionalDependencies:
     fsevents "^2.3.2"
 
-react@*, react@^18.0.0, react@^18.2.0, "react@>= 16", "react@>= 16.8.0", react@>=16.8.0:
-  version "18.2.0"
-  resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
-  integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
+react@*, react@^18.0.0, react@^18.2.0, react@^18.3.1, "react@>= 16", "react@>= 16.8.0", react@>=16.8.0:
+  version "18.3.1"
+  resolved "https://registry.npmjs.org/react/-/react-18.3.1.tgz"
+  integrity sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==
   dependencies:
     loose-envify "^1.1.0"
 
@@ -8242,6 +8247,11 @@ schema-utils@2.7.0:
     "@types/json-schema" "^7.0.4"
     ajv "^6.12.2"
     ajv-keywords "^3.4.1"
+
+scripts@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.npmjs.org/scripts/-/scripts-0.1.0.tgz"
+  integrity sha512-URMy4uj80+USxik0E+P7OeagdYGRM6vJQ+8zADRRNjcoIVdouxB7B60P4G4y20TizSGXdE0nAW5sSM1IIXa3hw==
 
 select-hose@^2.0.0:
   version "2.0.0"
@@ -8696,6 +8706,11 @@ styled-components@^5.3.6, "styled-components@>= 2":
     hoist-non-react-statics "^3.0.0"
     shallowequal "^1.1.0"
     supports-color "^5.5.0"
+
+styled@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/styled/-/styled-1.0.0.tgz"
+  integrity sha512-mPbinkDY7K//Jxi7hZBNSiUF3Q9LE8NHrlUuQXLHCFZcVJeSXQh/Kn4C7lWf8Obre3iyYHo0OqA3WptZrwST/A==
 
 stylehacks@^5.1.1:
   version "5.1.1"
