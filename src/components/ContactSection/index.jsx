@@ -9,7 +9,7 @@ import DribbbleIcon from '../../assets/icons/dribbble.svg';
 
 const ContactSection = () => {
   return (
-    <Container>
+    <Container id='contato'>
         <h3>Quer entrar em contato?</h3>
         <p className='contact-invite'>Tem uma ideia de projeto? Eu adoraria colaborar. Envie uma mensagem. 🎣</p>
 

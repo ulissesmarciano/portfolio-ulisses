@@ -4,7 +4,7 @@ import SkillItem from '../SkillItem';
 
 const SkillsSection = () => {
   return (
-    <Container>
+    <Container id='habilidades'>
       <h3>Habilidades</h3>
       <div className='skill-content'>
         <SkillItem 
