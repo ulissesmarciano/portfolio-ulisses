@@ -11,7 +11,7 @@ const Header = ({id}) => {
   
   return (
     <Container>
-      <h1 className='portfolio-title'>Ulisses Marciano</h1>
+      <h1 className='portfolio-title' id="header">Ulisses Marciano</h1>
       <nav className='navigation-bar'>
         <ul>
           <li>

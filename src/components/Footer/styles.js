@@ -12,7 +12,7 @@ export const Container = styled.section`
         justify-content: space-between;
     }
     
-    .bottom-info-section h2 {
+    .bottom-info-section h2 a {
         color: #fff;
         font-size: 1.5rem;
     }
