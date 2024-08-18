@@ -1,10 +1,20 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 import { Container } from './styled';
 import SkillItem from '../SkillItem';
 
 const SkillsSection = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
-    <Container id='habilidades'>
+    <Container 
+      id='habilidades'
+      ref={ref}
+      className={inView ? 'is-visible' : ''}
+    >
       <h3>Habilidades</h3>
       <div className='skill-content'>
         <SkillItem 

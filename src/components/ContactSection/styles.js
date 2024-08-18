@@ -1,6 +1,25 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const slideUp = keyframes`
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+`;
 
 export const Container = styled.section`
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-out;
+
+
+    &.is-visible {
+        animation: ${slideUp} 1s forwards;
+    }
     margin: 0 auto 8rem;
 
     display: flex;
@@ -77,4 +96,4 @@ export const Container = styled.section`
             gap: .4rem;
         }
     }
-`
+`;

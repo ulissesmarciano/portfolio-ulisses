@@ -1,4 +1,5 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 import { Container } from './styles';
 import LinkItem from '../LinkItem';
 
@@ -8,8 +9,17 @@ import DribbbleIcon from '../../assets/icons/dribbble.svg';
 
 
 const ContactSection = () => {
+  const {ref, inView} = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
-    <Container id='contato'>
+    <Container 
+        id='contato'
+        ref={ref}
+        className={inView ? 'is-visible' : ''}
+    >
         <h3>Quer entrar em contato?</h3>
         <p className='contact-invite'>Tem uma ideia de projeto? Eu adoraria colaborar. Envie uma mensagem. 🎣</p>
 

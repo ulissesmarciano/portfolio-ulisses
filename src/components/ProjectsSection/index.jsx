@@ -1,4 +1,5 @@
 import React from 'react';
+import { InView, useInView } from 'react-intersection-observer';
 import { Container } from './styles';
 import ProjectItem from '../ProjectItem';
 
@@ -7,8 +8,17 @@ import RubkutImage from '../../assets/projectarts/reacthubkut.png';
 import SiteCCEMImage from '../../assets/projectarts/siteccem.png';
 
 const ProjectsSection = () => {
+  const {ref, inView} = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
-    <Container id='projetos'>
+    <Container 
+      id='projetos'
+      ref={ref}
+      className={InView ? 'is-visible' : ''}
+    >
         <h3>Projetos</h3>
         <div className='project-section'>
           <ProjectItem 

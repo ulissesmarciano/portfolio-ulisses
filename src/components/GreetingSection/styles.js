@@ -1,6 +1,26 @@
-import styled from "styled-components";
+import styled, { keyframes } from 'styled-components';
+
+const slideUp = keyframes`
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+`;
 
 export const Container = styled.section`
+
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+
+    &.is-visible {
+        animation: ${slideUp} 0.5s forwards;
+    }
+    
     padding-bottom: 8rem;
     height: calc(100vh - 98.78px);
 
@@ -119,4 +139,4 @@ export const Container = styled.section`
             }
         }
     }
-`
+`;

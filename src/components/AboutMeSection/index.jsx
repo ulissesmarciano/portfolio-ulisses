@@ -1,9 +1,20 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 import { Container } from './styles';
 
 const AboutMeSection = () => {
+
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1, 
+  });
+
   return (
-    <Container id='sobre'>
+    <Container 
+      id='sobre'
+      ref={ref} 
+      className={inView ? 'is-visible' : ''}
+    >
       <h3>Sobre</h3>
       <div className='content-section'>
           <div className='text-section'>

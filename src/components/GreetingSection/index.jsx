@@ -1,10 +1,20 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 import { Container } from './styles';
 import LinkItem from '../LinkItem';
 
 const GreetingsSection = () => {
+
+  const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+  });
+
   return (
-    <Container>
+    <Container
+      ref={ref} 
+      className={inView ? 'is-visible' : ''}
+    >
         <h3 className='hello-section'>Olá, me chamo Ulisses <span className='waving-hand'>&#128075;</span></h3>
         <p className='summary-sentence'>Sou um <span>desenvolvedor full-stack</span>, com treinamento certificado e também <span>desenvolvo aplicativos Android</span>.</p>
         <div className='contact-screen'>
