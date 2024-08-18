@@ -13,6 +13,7 @@ export const Container = styled.header`
         font-size: 2rem;
         font-weight: 800;
         flex: 1;
+        z-index: 11;
    }
    
    .navigation-bar {

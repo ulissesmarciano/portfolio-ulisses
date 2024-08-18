@@ -35,7 +35,7 @@ export const Container = styled.section`
     }
 
     .close-sidebar-container {
-        padding: 1.2rem 2rem;
+        padding: .8rem 2rem;
 
         display: flex;
         justify-content: flex-end;
@@ -46,6 +46,19 @@ export const Container = styled.section`
 
         background-color: transparent;
         border: none;
+    }
+
+    .anchor-section {
+        padding-top: 8rem;
+        height: 100vh;
+    }
+
+    .anchor-section li {
+        margin-bottom: 3rem;
+    }
+
+    .anchor-section li:last-child{
+        margin-top: 6rem;
     }
 
     @media(max-width: 320px){

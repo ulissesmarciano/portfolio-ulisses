@@ -25,23 +25,23 @@ const Sidebar = ({active}) => {
           </li>
           <li>
             <LinkItem 
-              name="Sobre"
+              name="Habilidades"
               variant="sidebarLink"
-              href="#sobre"
+              href="#habilidades"
             />
           </li>
           <li>
             <LinkItem 
-              name="Sobre"
+              name="Projetos"
               variant="sidebarLink"
-              href="#sobre"
+              href="#projetos"
             />
           </li>
           <li>
             <LinkItem 
-              name="Sobre"
+              name="Contato"
               variant="sidebarButton"
-              href="#sobre"
+              href="#contato"
             />
           </li>
         </ul>
