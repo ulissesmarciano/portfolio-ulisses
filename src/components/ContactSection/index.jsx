@@ -27,16 +27,22 @@ const ContactSection = () => {
                 name="linkedIn"
                 variant="greetingsContactLinkIcon"
                 src={LinkedInIcon}
-            />
+                href="https://www.linkedin.com/in/ulissesmarciano/"
+                target="_blank"
+                />
             <LinkItem 
                 name="Github"
                 variant="greetingsContactLinkIcon"
                 src={GithubIcon}
-            />
+                href="https://github.com/ulissesmarciano"
+                target="_blank"
+                />
             <LinkItem 
                 name="Dribbble"
                 variant="greetingsContactLinkIcon"
                 src={DribbbleIcon}
+                href="https://dribbble.com/ulissesmarciano"
+                target="_blank"
             />
         </div>
     </Container>

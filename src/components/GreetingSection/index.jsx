@@ -13,14 +13,20 @@ const GreetingsSection = () => {
                 <LinkItem 
                     name="LinkedIn"
                     variant="greetingsContactLink"
-                />
+                    href="https://www.linkedin.com/in/ulissesmarciano/"
+                    target="_blank"
+                    />
                 <LinkItem 
                     name="Github"
                     variant="greetingsContactLink"
-                />
+                    href="https://github.com/ulissesmarciano"
+                    target="_blank"
+                    />
                 <LinkItem 
                     name="Dribbble"
                     variant="greetingsContactLink"
+                    href="https://dribbble.com/ulissesmarciano"
+                    target="_blank"
                 />
             </div>
         </div>
