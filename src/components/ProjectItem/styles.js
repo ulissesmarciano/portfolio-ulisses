@@ -93,7 +93,7 @@ export const Container = styled.div`
 
     .image-container img {
         z-index: -1;
-        width: 24rem;
+        height: 100%;
     }
 
     @media(max-width: 768px){
