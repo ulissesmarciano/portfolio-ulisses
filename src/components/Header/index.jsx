@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
+
 import { SidebarIcon, Container } from './styles';
-import LinkItem from '../LinkItem';
+import Sidebar from '../Sidebar';
 import { FiMenu } from 'react-icons/fi';
+import LinkItem from '../LinkItem';
 
 const Header = ({id}) => {
   const [sidebar, setSidebar] = useState(false);
-  const showSidebar = () => setSidebar(true);
+  const showSidebar = () => setSidebar(!sidebar);
+  
   return (
     <Container>
       <h1 className='portfolio-title'>Ulisses Marciano</h1>
@@ -40,7 +43,7 @@ const Header = ({id}) => {
       </nav>
       <SidebarIcon onClick={showSidebar}>
         <FiMenu />
-        {sidebar && <>teste</>}
+        {sidebar && <Sidebar active={setSidebar}/>}
       </SidebarIcon>
     </Container>
   )
