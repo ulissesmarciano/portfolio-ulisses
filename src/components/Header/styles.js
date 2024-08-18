@@ -46,7 +46,7 @@ export const Container = styled.header`
     }
 `
 
-export const CloseSidebarIcon = styled.button`
+export const SidebarIcon = styled.button`
     display: none;
 
     @media (max-width: 768px){
