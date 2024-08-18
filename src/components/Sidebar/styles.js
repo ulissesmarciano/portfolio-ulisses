@@ -35,7 +35,7 @@ export const Container = styled.section`
     }
 
     .close-sidebar-container {
-        padding: .8rem 2rem;
+        padding: 1.2rem 2rem;
 
         display: flex;
         justify-content: flex-end;
