@@ -1,11 +1,21 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 import { Container } from './styles';
 
 import ShareIcon from "../../assets/icons/share-icon.png";
 
 const ProjectItem = ({ variant="primary", hrefProjectName, projecTitle, projectType, projectDescription, projectLanguage, projectImage }) => {
+  const {ref, inView} = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
-    <Container variant={variant}>
+    <Container 
+        variant={variant}
+        ref={ref}
+        className={inView ? 'is-visible' : ''}
+    >
         <div className='info-content'>
             <h4 className='title'>{projecTitle}</h4>
             <p>{projectType}</p>

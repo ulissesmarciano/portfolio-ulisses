@@ -1,7 +1,51 @@
-import styled from "styled-components";
-import { css } from "styled-components";
+import styled, {css, keyframes} from "styled-components";
+
+const slideLeft = keyframes`
+    from {
+        transform: translateX(-40px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+`;
+
+const slideRight = keyframes`
+    from {
+        transform: translateX(40px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+`;
+
+const slideUp = keyframes`
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+`;
+
 
 export const Container = styled.div`
+    opacity: 0;
+    transform: translateX(40px);
+    transition: all 2s ease-out;
+
+    &.is-visible {
+        animation: ${slideLeft} 2s forwards;
+    }
+
     padding: 3rem 0;
 
     display: flex;
@@ -11,6 +55,14 @@ export const Container = styled.div`
 
     ${({variant}) => variant !== "primary" && css`
         flex-direction: row-reverse;
+
+        opacity: 0;
+        transform: translateX(40px);
+        transition: all 2s ease-out;
+
+        &.is-visible {
+            animation: ${slideRight} 2s forwards;
+        }
     `}
 
     .info-content {
@@ -98,5 +150,20 @@ export const Container = styled.div`
 
     @media(max-width: 768px){
         flex-direction: column-reverse;
+        
+        transform: translateY(40px);
+        transition: all 1s ease-out;
+        &.is-visible {
+            animation: ${slideUp} 1s forwards;
+        }
+        
+
+        ${({variant}) => variant !== "primary" && css`
+            &.is-visible {
+                animation: ${slideUp} 2s forwards;
+            }
+        `
+
+
     }
 `

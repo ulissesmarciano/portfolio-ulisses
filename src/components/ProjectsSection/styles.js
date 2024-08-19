@@ -14,11 +14,11 @@ const slideUp = keyframes`
 export const Container = styled.section`
     opacity: 0;
     transform: translateY(20px);
-    transition: all 2s ease-out;
+    transition: all 1s ease-out;
     scroll-margin-top: 200px;
 
     &.is-visible {
-        animation: ${slideUp} 2s forwards;
+        animation: ${slideUp} 1s forwards;
     }
 
     margin-bottom: 8rem;
