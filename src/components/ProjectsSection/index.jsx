@@ -1,5 +1,5 @@
 import React from 'react';
-import { InView, useInView } from 'react-intersection-observer';
+import { useInView } from 'react-intersection-observer';
 import { Container } from './styles';
 import ProjectItem from '../ProjectItem';
 
@@ -17,7 +17,7 @@ const ProjectsSection = () => {
     <Container 
       id='projetos'
       ref={ref}
-      className={InView ? 'is-visible' : ''}
+      className={inView ? 'is-visible' : ''}
     >
         <h3>Projetos</h3>
         <div className='project-section'>
