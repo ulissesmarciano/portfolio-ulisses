@@ -22,7 +22,7 @@ export const Container = styled.section`
         animation: ${slideUp} 1s forwards;
     }
 
-    height: 100vh;
+    height: 60vh;
     
     h3 {
         font-size: 1.75rem;
