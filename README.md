@@ -1,5 +1,5 @@
 Bibliotecas utilizadas:
 
 - styled components
-- react devicons
+- react icons
 - react intersection observer
