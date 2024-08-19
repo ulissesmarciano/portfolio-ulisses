@@ -26,7 +26,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://ulissesmarciano.github.io/portfolio-ulisses",
   "eslintConfig": {
     "extends": [
       "react-app",
