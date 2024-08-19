@@ -150,7 +150,7 @@ export const Container = styled.div`
 
     @media(max-width: 768px){
         flex-direction: column-reverse;
-        
+
         transform: translateY(40px);
         transition: all 1s ease-out;
         &.is-visible {
@@ -162,7 +162,7 @@ export const Container = styled.div`
             &.is-visible {
                 animation: ${slideUp} 2s forwards;
             }
-        `
+        `}
 
 
     }
