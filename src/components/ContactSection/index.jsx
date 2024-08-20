@@ -5,7 +5,7 @@ import LinkItem from '../LinkItem';
 
 import GithubIcon from '../../assets/icons/github-black.svg';
 import LinkedInIcon from '../../assets/icons/linkedin-black.svg';
-import DribbbleIcon from '../../assets/icons/dribbble.svg';
+import WhatsappIcon from '../../assets/icons/whatsapp-black.svg';
 
 
 const ContactSection = () => {
@@ -48,10 +48,10 @@ const ContactSection = () => {
                 target="_blank"
                 />
             <LinkItem 
-                name="Dribbble"
+                name="WhatsApp"
                 variant="greetingsContactLinkIcon"
-                src={DribbbleIcon}
-                href="https://dribbble.com/ulissesmarciano"
+                src={WhatsappIcon}
+                href="https://api.whatsapp.com/send?phone=+5519999324023&text=Ol%C3%A1+Ulisses+quero+conversar+com+voc%C3%AA%21+%F0%9F%98%80"
                 target="_blank"
             />
         </div>
