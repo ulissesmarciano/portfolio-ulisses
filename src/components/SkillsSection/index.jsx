@@ -21,30 +21,30 @@ const SkillsSection = () => {
           iconName="javascript"
           languageName="JavaScript"
         />
-        <SkillItem 
+        {/* <SkillItem 
           iconName="typescript"
           languageName="Typescript"
-        />
-        <SkillItem 
+        /> */}
+        {/* <SkillItem 
           iconName="csharp"
           languageName="CSharp"
-        />
+        /> */}
         <SkillItem 
           iconName="react"
           languageName="React.js"
         />
-        <SkillItem 
+        {/* <SkillItem 
           iconName="angular"
           languageName="Angular.js"
-        />
+        /> */}
         <SkillItem 
           iconName="android"
           languageName="Android Dev"
         />
-        <SkillItem 
+        {/* <SkillItem 
           iconName="dot-net"
           languageName=".Net"
-        />
+        /> */}
         <SkillItem 
           iconName="html5"
           languageName="HTML5"
