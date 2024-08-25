@@ -15,8 +15,8 @@ const PortfolioSection = () => {
       <main className='main-body'>
         <GreetingsSection />
         <AboutMeSection />
-        <SkillsSection />
         <ProjectsSection />
+        <SkillsSection />
         <ContactSection />
       </main>
       <Footer />
