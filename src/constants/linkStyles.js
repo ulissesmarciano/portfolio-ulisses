@@ -1,7 +1,7 @@
 import { css } from "styled-components";
 
 export const linkStyles = {
-    headerPrimeryLink: css`
+    headerPrimaryLink: css`
         font-weight: 900;
         padding-bottom: .3rem;
         position: relative;
@@ -29,6 +29,7 @@ export const linkStyles = {
         font-weight: 900;
         border: 2px solid #000;
         border-radius: 1rem;
+        transition: 0.3s;
 
         &:hover {
             color: #fff;
@@ -126,21 +127,5 @@ export const linkStyles = {
     sidebarLink: css`
         font-size: 1.75rem;
         font-weight: bold;
-    `,
-
-    sidebarButton: css`
-        padding: .8rem 2.4rem;
-        margin-top: 2rem;
-        border: 2px solid #000;
-        border-radius: 1rem;
-        background-color: #05a1ad;
-        
-        font-size: 1.6rem;
-        font-weight: 600;
-        
-        &:hover {
-            background-color: #000;
-            color: #fff;
-        }
     `,
 }
