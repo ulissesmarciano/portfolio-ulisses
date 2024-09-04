@@ -116,7 +116,7 @@ export const Container = styled.header`
     .header-container nav ul {
       position: fixed;
       top: 0;
-      right: -100%; /* Inicialmente fora da tela à direita */
+      right: -100%;
       height: 100%;
       width: 100%;
       background-color: #fff;
@@ -124,11 +124,11 @@ export const Container = styled.header`
       gap: 3rem;
       align-items: center;
       justify-content: center;
-      transition: right 0.3s ease-in-out; /* Transição da direita para a esquerda */
+      transition: right 0.3s ease-in-out;
     }
 
     input:checked ~ ul {
-      right: 0; /* Move o menu para dentro da tela */
+      right: 0;
     }
 
     .header-container nav ul a {
@@ -146,12 +146,12 @@ export const Container = styled.header`
 
 
   @media (max-width: 375px){
-        .header-container {
-            padding: 0 1rem;
-        }
-        .header-container .logo {
-            font-size: 1.4rem;
-        }
-   }
+      .header-container {
+          padding: 0 1rem;
+      }
+      .header-container .logo {
+          font-size: 1.4rem;
+      }
+}
 
 `;

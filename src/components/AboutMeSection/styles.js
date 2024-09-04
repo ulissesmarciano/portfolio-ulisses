@@ -128,7 +128,6 @@ export const Container = styled.section`
         }
     }
 
-    /* VERIFICAR SE HÁ CÓDIGO A MAIS DENTRO DOS BREAKPOINTS */
 
     @media(max-width: 546px){
         .content-section .text-section .text-and-image-section p {
