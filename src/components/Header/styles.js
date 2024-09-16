@@ -8,7 +8,7 @@ export const Container = styled.header`
     max-width: 64rem;
     
     .header-container {
-        padding: 1.9rem 0;
+        padding: 1.9rem 2rem;
 
         display: flex;
         justify-content: space-between;
