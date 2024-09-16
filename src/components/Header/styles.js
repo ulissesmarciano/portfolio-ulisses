@@ -4,15 +4,15 @@ export const Container = styled.header`
     position: relative;
     
     margin: 0 auto;
-    padding: 1.9rem 0;
     z-index: 1000;
     max-width: 64rem;
-
+    
     .header-container {
+        padding: 1.9rem 0;
+
         display: flex;
         justify-content: space-between;
         align-items: center;
-
     }
 
     .header-container .logo {
@@ -25,16 +25,30 @@ export const Container = styled.header`
     .header-container nav {
         position: relative;
         z-index: 100;
-        flex: 1;
+        flex: 0;
     }
 
     .header-container nav ul {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        width: 100%;
+        background-color: #fff;
+        transition: right 0.3s ease-in-out;
+    }
+
+    input:checked ~ ul {
+        right: 0;
     }
 
     .header-container .menu {
-        display: none;
+        display: block;
         width: 50px;
         height: 50px;
         align-self: end;
@@ -93,65 +107,36 @@ export const Container = styled.header`
         bottom: 0;
         }
     }
-  @media (max-width: 1200px){
+  @media (min-width: 375px){
         .header-container{
-            padding: 1.9rem 2rem;
+            padding: 1.2rem 1rem;
         }
     }
 
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     .header-container {
-        padding: 1.2rem 2rem;
-    }
-
-    .header-container .menu {
-      display: block;
+        max-width: 1440px;
+        margin: 0 auto;
     }
 
     .header-container nav {
-        flex: 0;
+        flex: 1;
     }
 
 
     .header-container nav ul {
-      position: fixed;
-      top: 0;
-      right: -100%;
-      height: 100%;
-      width: 100%;
-      background-color: #fff;
-      flex-direction: column;
-      gap: 3rem;
-      align-items: center;
-      justify-content: center;
-      transition: right 0.3s ease-in-out;
+      position: static;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      gap: 0;
+      height: auto;
+      width: auto;
+      background-color: transparent;
     }
 
-    input:checked ~ ul {
-      right: 0;
-    }
-
-    .header-container nav ul a {
-      text-align: center;
-      padding: 20px;
-      display: block;
+    .header-container .menu {
+        display: none;
     }
   }
-
-  @media (max-width: 450px){
-    .header-container .logo {
-        font-size: 1.8rem;
-    }
-  }
-
-
-  @media (max-width: 375px){
-      .header-container {
-          padding: 0 1rem;
-      }
-      .header-container .logo {
-          font-size: 1.4rem;
-      }
-}
-
 `;
