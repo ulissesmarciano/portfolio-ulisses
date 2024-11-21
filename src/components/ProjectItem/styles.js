@@ -39,8 +39,8 @@ export const Container = styled.div`
     transition: all 2s ease-out;
 
     &.is-visible {
-        animation: ${({ variant }) => 
-            variant === "primary" ? slideLeft : slideRight} 2s forwards;
+        animation: ${({ variant }) =>
+        variant === "primary" ? slideLeft : slideRight} 2s forwards;
     }
 
     padding: 3rem;
@@ -49,7 +49,8 @@ export const Container = styled.div`
     gap: 1rem;
     align-items: center;
     justify-content: space-between;
-    border: 2px solid #000;
+    border: 2px solid ${({ theme }) => theme.border};    
+
     border-radius: 1rem;
 
     ${({ variant }) => variant !== "primary" && css`
@@ -101,6 +102,10 @@ export const Container = styled.div`
             }
             color: #fff;
         }
+    }
+
+    .info-content img {
+        filter: ${({ theme }) => theme.imageFilter};
     }
 
     .image-container {
