@@ -2,9 +2,11 @@ import { css } from "styled-components";
 
 export const linkStyles = {
     headerPrimaryLink: css`
+        z-index: 1;
         font-weight: 900;
         padding-bottom: .3rem;
         position: relative;
+        color: ${({ theme }) => theme.text};
 
         &:after {
             content: '';
@@ -25,26 +27,30 @@ export const linkStyles = {
     `,
 
     headerSecondaryLink: css`
+        z-index: 1;
         padding: .8rem 1.5rem;
         font-weight: 900;
-        border: 2px solid #000;
+        border: 2px solid ${({ theme }) => theme.border};
         border-radius: 1rem;
         transition: 0.3s;
+        color: ${({ theme }) => theme.text};
 
         &:hover {
-            color: #fff;
-            background-color: #000;
+            color: ${({ theme }) => theme.secondaryLinkTextColor};
+            background-color: ${({ theme }) => theme.linkBackgroundColor};
         }
     `,
 
     greetingsContactLink: css`
         padding: 0.8rem 1.5rem;
+        z-index: 1;
         
         position: relative;
         overflow: hidden;
         
         font-weight: 500;
-        border: 2px solid #000;
+        color: ${({ theme }) => theme.text};
+        border: 2px solid ${({ theme }) => theme.border};
         border-radius: 1rem;
 
         display: flex;
@@ -75,20 +81,26 @@ export const linkStyles = {
             color: #fff;
         }
     `,
-    
+
     greetingsContactLinkIcon: css`
+        z-index: 1;
         padding: .8rem 1.2rem .8rem 1rem;
         
         position: relative;
         overflow: hidden;
         
         font-weight: 500;
-        border: 2px solid #000;
+        color: ${({ theme }) => theme.text};
+        border: 2px solid ${({ theme }) => theme.border};
         border-radius: 1rem;
 
         display: flex;
         align-items: center;
         gap: .5rem;
+
+        img {
+            filter: ${({ theme }) => theme.imageFilter};
+        }
         
         &:after {
             content: '';
@@ -115,6 +127,7 @@ export const linkStyles = {
             color: #fff;
             img {
                 filter: invert(100%);
+                background-color: transparent;
             }
         }
 
@@ -125,7 +138,19 @@ export const linkStyles = {
     `,
 
     sidebarLink: css`
+        z-index: 1000;
+        padding: 1rem;
+        min-width: 6rem;
+
         font-size: 1.75rem;
         font-weight: bold;
+        color: ${({ theme }) => theme.text};
+
+        transition: 0.3s;
+
+        &:hover {
+            background-color: #05a1ad;
+            color: #fff;
+        }
     `,
 }
