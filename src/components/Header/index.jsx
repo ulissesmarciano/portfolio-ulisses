@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { Container } from './styles';
 import LinkItem from '../LinkItem';
 import useWindowSize from '../../hooks/useWindowSize';
+import DarkModeToggle from '../DarkModeToggle';
 
-const HeaderCopy = ({id}) => {
+const Header = ({ id, toggleTheme }) => {
   const [sidebar, setSidebar] = useState(false);
   const { width } = useWindowSize();
   const showSidebar = () => setSidebar(!sidebar);
@@ -24,9 +25,9 @@ const HeaderCopy = ({id}) => {
       <div className="header-container">
         <h1 className='logo'>Ulisses Marciano</h1>
         <nav>
-          <input 
-            type="checkbox" 
-            id="menu-hamburguer" 
+          <input
+            type="checkbox"
+            id="menu-hamburguer"
             checked={sidebar}
             onChange={showSidebar}
           />
@@ -41,7 +42,7 @@ const HeaderCopy = ({id}) => {
             <li>
               <LinkItem
                 name="Sobre"
-                href={id="#sobre"}
+                href={id = "#sobre"}
                 variant={getLinkVariant('sidebarLink')}
                 onClick={handleLinkClick}
               />
@@ -49,7 +50,7 @@ const HeaderCopy = ({id}) => {
             <li>
               <LinkItem
                 name="Projetos"
-                href={id="#projetos"}
+                href={id = "#projetos"}
                 variant={getLinkVariant('sidebarLink')}
                 onClick={handleLinkClick}
               />
@@ -57,7 +58,7 @@ const HeaderCopy = ({id}) => {
             <li>
               <LinkItem
                 name="Habilidades"
-                href={id="#habilidades"}
+                href={id = "#habilidades"}
                 variant={getLinkVariant('sidebarLink')}
                 onClick={handleLinkClick}
               />
@@ -65,10 +66,11 @@ const HeaderCopy = ({id}) => {
             <li>
               <LinkItem
                 name="Contato"
-                href={id="#contato"}
+                href={id = "#contato"}
                 variant="headerSecondaryLink"
                 onClick={handleLinkClick}
               />
+              <DarkModeToggle toggleTheme={toggleTheme} />
             </li>
           </ul>
         </nav>
@@ -77,4 +79,4 @@ const HeaderCopy = ({id}) => {
   );
 }
 
-export default HeaderCopy;
+export default Header;
