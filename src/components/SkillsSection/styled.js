@@ -50,12 +50,12 @@ export const Container = styled.section`
 
             ::-webkit-scrollbar {
                 height: .8rem;
-                background: white;
+                background: ${({ theme }) => theme.scrollbarBackground};
             }
 
             ::-webkit-scrollbar-track {
                 background-color: transparent;
-                border: solid 3px #e0e0e0;
+                border: solid 3px ${({ theme }) => theme.scrollbarBorder};
                 border-radius: 1rem;
             }
 
