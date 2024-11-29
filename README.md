@@ -64,3 +64,4 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Renderização e criação das lógicas para os componentes
 - [x] Realizar o deploy com um link para exposição no github.
 - [x] Adicionando um dark/light theme para a página
+- [ ] Adicionar nova arte e reorganizar a ordem das seções na página
