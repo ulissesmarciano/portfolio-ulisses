@@ -11,7 +11,7 @@ export const lightTheme = {
 };
 
 export const darkTheme = {
-    background: '#121212',
+    background: '#212226',
     text: '#FFFFFF',
     hamburguerBgColor: '#fff',
     border: '#fff',
