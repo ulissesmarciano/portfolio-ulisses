@@ -1,7 +1,9 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import { Container } from './styles';
+
 import LinkItem from '../LinkItem';
+import { ContactHrefs } from '../../constants/ContactHrefs';
 
 import GithubIcon from '../../assets/icons/github-black.svg';
 import LinkedInIcon from '../../assets/icons/linkedin-black.svg';
@@ -29,7 +31,7 @@ const ContactSection = () => {
             </picture>
             <div className='name-email-section'>
                 <h1>Ulisses Marciano</h1>
-                <p>ulissesmkt2104@gmail.com</p>
+                <p>{ContactHrefs.email}</p>
             </div>
         </div>
         <div className='contact-buttons-container'>
@@ -37,21 +39,21 @@ const ContactSection = () => {
                 name="linkedIn"
                 variant="greetingsContactLinkIcon"
                 src={LinkedInIcon}
-                href="https://www.linkedin.com/in/ulissesmarciano/"
+                href={ContactHrefs.linkedIn}
                 target="_blank"
                 />
             <LinkItem 
                 name="Github"
                 variant="greetingsContactLinkIcon"
                 src={GithubIcon}
-                href="https://github.com/ulissesmarciano"
+                href={ContactHrefs.github}
                 target="_blank"
                 />
             <LinkItem 
                 name="WhatsApp"
                 variant="greetingsContactLinkIcon"
                 src={WhatsappIcon}
-                href="https://api.whatsapp.com/send?phone=+5519999324023&text=Ol%C3%A1+Ulisses+quero+conversar+com+voc%C3%AA%21+%F0%9F%98%80"
+                href={ContactHrefs.whatsapp}
                 target="_blank"
             />
         </div>

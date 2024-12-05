@@ -1,7 +1,10 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import { Container } from './styles';
+
 import LinkItem from '../LinkItem';
+import { ContactHrefs } from '../../constants/ContactHrefs';
+
 
 const GreetingsSection = () => {
 
@@ -23,19 +26,19 @@ const GreetingsSection = () => {
           <LinkItem
             name="LinkedIn"
             variant="greetingsContactLink"
-            href="https://www.linkedin.com/in/ulisses-marciano/"
+            href={ContactHrefs.linkedIn}
             target="_blank"
           />
           <LinkItem
             name="Github"
             variant="greetingsContactLink"
-            href="https://github.com/ulissesmarciano"
+            href={ContactHrefs.github}
             target="_blank"
           />
           <LinkItem
             name="WhatsApp"
             variant="greetingsContactLink"
-            href="https://api.whatsapp.com/send?phone=+5513996484716&text=Ol%C3%A1+Ulisses+quero+conversar+com+voc%C3%AA%21+%F0%9F%98%80"
+            href={ContactHrefs.whatsapp}
             target="_blank"
           />
         </div>
