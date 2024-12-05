@@ -35,7 +35,7 @@ const GreetingsSection = () => {
           <LinkItem
             name="WhatsApp"
             variant="greetingsContactLink"
-            href="https://api.whatsapp.com/send?phone=+5519999324023&text=Ol%C3%A1+Ulisses+quero+conversar+com+voc%C3%AA%21+%F0%9F%98%80"
+            href="https://api.whatsapp.com/send?phone=+5513996484716&text=Ol%C3%A1+Ulisses+quero+conversar+com+voc%C3%AA%21+%F0%9F%98%80"
             target="_blank"
           />
         </div>
