@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from './styles';
 
 const DarkModeToggle = ({ toggleTheme }) => {
-    const handleChange = (event) => {
+    const handleChange = () => {
         toggleTheme();
     };
 
