@@ -11,138 +11,8 @@ const slideUp = keyframes`
   }
 `;
 
-export const Container2 = styled.section`
-
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.5s ease-out;
-
-    &.is-visible {
-        animation: ${slideUp} 0.5s forwards;
-    }
-    
-    padding-bottom: 8rem;
-    height: calc(100vh - 98.78px);
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-
-    .hello-section {
-        margin-bottom: 2.2rem;
-
-        display: flex;
-        align-items: flex-start;
-        gap: 1rem;
-
-        font-size: 2.625rem;
-    }
-
-    .hello-section .waving-hand {
-        font-size: 2rem;
-        display: inline-block;
-        animation: wave 2s infinite;
-        transform-origin: 70% 70%;
-    }
-
-    .summary-sentence {
-        margin-bottom: 2rem;
-
-        font-size: 2rem;
-        font-weight: bold;
-        line-height: 3rem;
-    }
-
-    .summary-sentence span {
-        background-color: #05a1ad;
-        color: #fff;
-    }
-
-    @keyframes wave {
-        0% { 
-            transform: rotate(0deg); 
-        }
-
-        10% { 
-            transform: rotate(14deg); 
-        }
-
-        20% { 
-            transform: rotate(-8deg); 
-        }
-
-        30% { 
-            transform: rotate(14deg); 
-        }
-
-        40% { 
-            transform: rotate(-4deg); 
-        }
-
-        50% { 
-            transform: rotate(10deg); 
-        }
-
-        60% { 
-            transform: rotate(0deg); 
-        }
-
-        100% { 
-            transform: rotate(0deg); 
-        }
-    }
-
-    .contact-screen p {
-
-        margin-bottom: 1rem;
-
-        font-size: 1.2rem;
-        line-height: 1.5rem;
-    }
-
-    .contact-screen .contact-link-screen {
-        
-        display: flex;
-        gap: 1rem;
-    }
-
-    @media(max-width: 769px){
-
-        .hello-section {
-            font-size: 2rem;
-        }
-
-        .summary-sentence {
-            font-size: 1.6rem;
-        }
-
-        .summary-sentence span {
-            color: #000;
-        }
-
-        @media(max-width: 425px){
-            .contact-screen .contact-link-screen {
-                gap: .1rem;
-                flex-wrap: wrap;
-            }
-        }
-
-        @media(max-width: 375px){
-            .summary-sentence {
-                font-size: 1.4rem;
-                line-height: 2.2rem;
-            }
-
-            .contact-screen p {
-                font-size: 1rem;
-            }
-        }
-    }
-`
-
 export const Container = styled.section`
-    padding-bottom: 8rem;
+    padding-bottom: 3rem;
 
     opacity: 0;
     transform: translateY(20px);
@@ -152,13 +22,13 @@ export const Container = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 2rem;
+    gap: 1rem;
 
     &.is-visible {
         animation: ${slideUp} 0.5s forwards;
     }
 
-    height: calc(100vh - 136.78px);
+    min-height: calc(100vh - 88.38px);
 
     .hello-section {
         margin-bottom: 2.2rem;
@@ -209,6 +79,13 @@ export const Container = styled.section`
         100% { 
             transform: rotate(0deg); 
         }
+    }
+
+    .summary-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .1rem;
     }
 
     .summary-sentence {
@@ -221,6 +98,13 @@ export const Container = styled.section`
     .summary-sentence span {
         background-color: #05a1ad;
         color: #fff;
+    }
+
+    .summary-container img {
+        height: 7rem;
+        width: 7rem;
+
+        border-radius: 10rem;
     }
 
     .contact-screen p {
@@ -247,6 +131,17 @@ export const Container = styled.section`
 
         .contact-screen .contact-link-screen {
             gap: 1rem;
+        }
+    }
+
+    @media(min-width: 425px) {
+        .summary-container {
+            flex-direction: row;
+        }
+
+        .summary-container img {
+            height: auto;
+            width: 30%;
         }
     }
 
