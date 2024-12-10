@@ -18,8 +18,11 @@ const GreetingsSection = () => {
       ref={ref}
       className={inView ? 'is-visible' : ''}
     >
-      <h3 className='hello-section'>Olá, me chamo Ulisses <span className='waving-hand'>&#128075;</span></h3>
-      <p className='summary-sentence'>Sou um <span>desenvolvedor full-stack</span>, com treinamento certificado e também <span>desenvolvo aplicativos Android</span>.</p>
+      <h4 className='hello-section'>Olá, me chamo Ulisses <span className='waving-hand'>&#128075;</span></h4>
+      <div className="summary-container">
+        <p className='summary-sentence'>Sou um <span>desenvolvedor full-stack</span>, com treinamento certificado e também <span>desenvolvo aplicativos Android</span>.</p>
+        <img className='user-image' src='https://avatars.githubusercontent.com/u/104742158?s=400&u=b793765b9ab0c8f5bec5e2c7580678cac6bce511&v=4' alt='Avatar do Ulisses' />
+      </div>
       <div className='contact-screen'>
         <p>Conheça um pouco do meu trabalho e fique à vontade para entrar em contato.</p>
         <div className='contact-link-screen'>
