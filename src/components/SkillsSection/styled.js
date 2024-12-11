@@ -37,9 +37,6 @@ export const Container = styled.section`
 
     @media (max-width: 1200px){
         .skill-content {
-            margin: 0 -2rem;
-            padding: 0 2rem 1rem;
-
             display: grid;
             grid-template-columns: repeat(6, 15.625rem);
             grid-template-rows: repeat(2, auto);
