@@ -5,6 +5,11 @@ import { Container } from './styles';
 import LinkItem from '../LinkItem';
 import { ContactHrefs } from '../../constants/ContactHrefs';
 
+import AvatarUlisses from '../../assets/avatar/avatar-ulisses.jpg'
+import LongDashBorder from '../../assets/svg/long-dash-circle.svg'
+import SolidBorder from '../../assets/svg/circle.svg'
+import AbstractDashBorder from '../../assets/svg/absctract-circle.svg'
+
 
 const GreetingsSection = () => {
 
@@ -20,8 +25,15 @@ const GreetingsSection = () => {
     >
       <h4 className='hello-section'>Olá, me chamo Ulisses <span className='waving-hand'>&#128075;</span></h4>
       <div className="summary-container">
-        <p className='summary-sentence'>Sou um <span>desenvolvedor full-stack</span>, com treinamento certificado e também <span>desenvolvo aplicativos Android</span>.</p>
-        <img className='user-image' src='https://avatars.githubusercontent.com/u/104742158?s=400&u=b793765b9ab0c8f5bec5e2c7580678cac6bce511&v=4' alt='Avatar do Ulisses' />
+        <div className="presentation-container">
+          <p className='summary-sentence'>Sou um <span>desenvolvedor full-stack</span>, com treinamento certificado e também <span>desenvolvo aplicativos Android</span>.</p>
+        </div>
+        <div className="avatar-container">
+          <img className='abstract-dash-border' src={AbstractDashBorder} alt='' />
+          <img className='solid-border' src={SolidBorder} alt='' />
+          <img className='long-dash-border' src={LongDashBorder} alt='' />
+          <img className='user-image' src={AvatarUlisses} alt='Avatar do Ulisses' />
+        </div>
       </div>
       <div className='contact-screen'>
         <p>Conheça um pouco do meu trabalho e fique à vontade para entrar em contato.</p>
