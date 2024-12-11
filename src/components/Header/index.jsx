@@ -16,7 +16,7 @@ const Header = ({ id, toggleTheme, isSun }) => {
   const getLinkVariant = (defaultVariant) => {
     if (width >= 768) {
       return defaultVariant === 'sidebarLink' ? 'headerPrimaryLink' : defaultVariant;
-    }
+    };
     return defaultVariant;
   };
 
@@ -80,6 +80,6 @@ const Header = ({ id, toggleTheme, isSun }) => {
       </div>
     </Container>
   );
-}
+};
 
 export default Header;
