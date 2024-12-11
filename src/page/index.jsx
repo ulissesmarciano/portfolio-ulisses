@@ -8,10 +8,10 @@ import ProjectsSection from '../components/ProjectsSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 
-const PortfolioSection = ({ toggleTheme }) => {
+const PortfolioSection = ({ toggleTheme, isSun }) => {
   return (
     <Container>
-      <Header toggleTheme={toggleTheme} />
+      <Header toggleTheme={toggleTheme} isSun={isSun} />
       <main className='main-body'>
         <GreetingsSection />
         <AboutMeSection />
