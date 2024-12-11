@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Container } from './styles';
 import LinkItem from '../LinkItem';
 import useWindowSize from '../../hooks/useWindowSize';
-import DarkModeToggle from '../DarkModeToggle';
+import SunMoonToggle from '../SunMoonToggle';
 
-const Header = ({ id, toggleTheme }) => {
+const Header = ({ id, toggleTheme, isSun }) => {
   const [sidebar, setSidebar] = useState(false);
   const { width } = useWindowSize();
   const showSidebar = () => setSidebar(!sidebar);
@@ -70,7 +70,10 @@ const Header = ({ id, toggleTheme }) => {
                 variant="headerSecondaryLink"
                 onClick={handleLinkClick}
               />
-              <DarkModeToggle toggleTheme={toggleTheme} />
+              <SunMoonToggle
+                toggleTheme={toggleTheme}
+                isSun={isSun}
+              />
             </li>
           </ul>
         </nav>
