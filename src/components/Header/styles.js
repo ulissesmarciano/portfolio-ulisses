@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.header`
-    position: relative;
-    
+    position: relative;    
     margin: 0 auto;
     z-index: 1000;
     max-width: 64rem;
@@ -19,9 +18,7 @@ export const Container = styled.header`
         z-index: 1000;
         position: relative;
         flex: 1;
-
         font-size: 1.4rem;
-
     }
 
     .header-container nav {
@@ -47,12 +44,10 @@ export const Container = styled.header`
     }
 
     .header-container nav ul li {
-
         width: 100%;
     }
 
     .header-container nav ul li:last-child {
-
         position: relative;
     }
 
@@ -86,20 +81,20 @@ export const Container = styled.header`
 
         &::before,
         &::after {
-        background-color: ${({ theme }) => theme.hamburguerBgColor};
-        content: "";
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        transition: 0.2s ease-in-out;
+            background-color: ${({ theme }) => theme.hamburguerBgColor};
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transition: 0.2s ease-in-out;
         }
 
         &::before {
-        top: -10px;
+            top: -10px;
         }
 
         &::after {
-        bottom: -10px;
+            bottom: -10px;
         }
     }
 
@@ -111,13 +106,13 @@ export const Container = styled.header`
         transform: rotate(45deg);
 
         &::before {
-        transform: rotate(90deg);
-        top: 0;
+            transform: rotate(90deg);
+            top: 0;
         }
 
         &::after {
-        transform: rotate(90deg);
-        bottom: 0;
+            transform: rotate(90deg);
+            bottom: 0;
         }
     }
   @media (min-width: 375px){
@@ -135,7 +130,6 @@ export const Container = styled.header`
     .header-container nav {
         flex: 1.6;
     }
-
 
     .header-container nav ul {
       position: static;
