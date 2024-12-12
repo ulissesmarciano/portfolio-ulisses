@@ -26,7 +26,7 @@ const GreetingsSection = () => {
       <h4 className='hello-section'>Olá, me chamo Ulisses <span className='waving-hand'>&#128075;</span></h4>
       <div className="summary-container">
         <div className="presentation-container">
-          <p className='summary-sentence'>Sou um <span>desenvolvedor full-stack</span>, com treinamento certificado e também <span>desenvolvo aplicativos Android</span>.</p>
+          <p className='summary-sentence'>Sou um <span>desenvolvedor font-end</span>, com treinamento certificado e também <span>desenvolvo aplicativos Android</span>.</p>
         </div>
         <div className="avatar-container">
           <img className='abstract-dash-border' src={AbstractDashBorder} alt='' />
