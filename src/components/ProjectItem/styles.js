@@ -1,4 +1,4 @@
-import styled, { css, keyframes } from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 const slideLeft = keyframes`
     from {
@@ -135,7 +135,7 @@ export const Container = styled.div`
 
         &.is-visible {
             animation: ${({ variant }) =>
-                variant === "primary" ? slideLeft : slideRight} 2s forwards;
+        variant === "primary" ? slideLeft : slideRight} 2s forwards;
         }
     }
 `;
