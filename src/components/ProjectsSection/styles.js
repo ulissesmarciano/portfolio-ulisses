@@ -27,31 +27,35 @@ export const Container = styled.section`
         font-size: 1.75rem;
     }
 
+    .project-section {
+        display: flex;
+        gap: 4rem;
+        flex-direction: row;
+        overflow-x: scroll;
+        overflow-y: hidden;
+
+        ::-webkit-scrollbar {
+            height: 0.8rem;
+            background: white;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: transparent;
+            border: solid 3px #e0e0e0;
+            border-radius: 1rem;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #c1c1c1;
+            border-radius: 1rem;
+        }
+    }
+
+    @media (min-width: 768px) {
         .project-section {
-
-            @media(max-width: 768px){
-            display: flex;
-            gap: 4rem;
-            flex-direction: row;
-            overflow-x: scroll;
-            overflow-y: hidden;
-
-            ::-webkit-scrollbar {
-                height: .8rem;
-                background: white;
-            }
-
-            ::-webkit-scrollbar-track {
-                background-color: transparent;
-                border: solid 3px #e0e0e0;
-                border-radius: 1rem;
-            }
-
-            ::-webkit-scrollbar-thumb {
-                background: #c1c1c1;
-                border-radius: 1rem;
-            }
-
+            flex-direction: column;
+            overflow-x: hidden;
         }
     }
 `;
+
