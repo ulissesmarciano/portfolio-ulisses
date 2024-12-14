@@ -35,27 +35,22 @@ const slideUp = keyframes`
 
 export const Container = styled.div`
     opacity: 0;
-    transform: translateX(40px);
-    transition: all 2s ease-out;
+    transform: translateY(40px);
+    transition: all 1s ease-out;
 
     &.is-visible {
-        animation: ${({ variant }) =>
-        variant === "primary" ? slideLeft : slideRight} 2s forwards;
+        animation: ${slideUp} 1s forwards;
     }
 
-    padding: 3rem;
-    margin: 1rem 0;
     display: flex;
+    flex-direction: column-reverse;
     gap: 1rem;
     align-items: center;
     justify-content: space-between;
-    border: 2px solid ${({ theme }) => theme.border};    
-
+    padding: 3rem;
+    margin: 1rem 0;
+    border: 2px solid ${({ theme }) => theme.border};
     border-radius: 1rem;
-
-    ${({ variant }) => variant !== "primary" && css`
-        flex-direction: row-reverse;
-    `}
 
     .info-content {
         max-width: 25rem;
@@ -80,7 +75,7 @@ export const Container = styled.div`
     }
 
     .info-content .language-container .language-type {
-        padding-bottom: .3rem;
+        padding-bottom: 0.3rem;
         position: relative;
         overflow: hidden;
 
@@ -90,7 +85,7 @@ export const Container = styled.div`
             left: 0;
             bottom: 0;
             width: 100%;
-            height: .3rem;
+            height: 0.3rem;
             background-color: #05a1ad;
             z-index: -1;
             transition: height 200ms ease;
@@ -110,7 +105,7 @@ export const Container = styled.div`
 
     .image-container {
         width: 25rem;
-        height: 15rem; 
+        height: 15rem;
         margin-bottom: 3rem;
         display: flex;
         justify-content: center;
@@ -130,16 +125,18 @@ export const Container = styled.div`
     .image-container img {
         width: 100%;
         height: 100%;
-        object-fit: cover; 
+        object-fit: cover;
     }
 
-    @media(max-width: 768px) {
-        flex-direction: column-reverse;
-        transform: translateY(40px);
-        transition: all 1s ease-out;
+    @media (min-width: 768px) {
+        flex-direction: ${({ variant }) => (variant !== "primary" ? "row-reverse" : "row")};
+        transform: translateX(40px);
+        transition: all 2s ease-out;
 
         &.is-visible {
-            animation: ${slideUp} 1s forwards;
+            animation: ${({ variant }) =>
+                variant === "primary" ? slideLeft : slideRight} 2s forwards;
         }
     }
 `;
+
