@@ -6,7 +6,7 @@ const Footer = ({id}) => {
     <Container>
         <div className='bottom-info-section'>
           <h2><a href={id="#header"}>Ulisses Marciano</a></h2>
-          <p>© ULISSES GONÇALVES 2024</p>
+          <p>© ULISSES GONÇALVES 2025</p>
         </div>
     </Container>
   );
