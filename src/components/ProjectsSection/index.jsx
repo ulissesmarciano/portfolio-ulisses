@@ -19,7 +19,7 @@ const ProjectsSection = () => {
       ref={ref}
       className={inView ? 'is-visible' : ''}
     >
-      <h3>Projetos</h3>
+      <h3 className='project-title'>Projetos</h3>
       <div className='project-section'>
         <ProjectItem
           projecTitle="site CCEM"
