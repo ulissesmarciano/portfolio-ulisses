@@ -7,7 +7,8 @@ export const lightTheme = {
     secondaryLinkTextColor: '#fff',
     imageFilter: 'none',
     scrollbarBorder: '#c1c1c1',
-    scrollbarBackground: '#fff'
+    scrollbarBackground: '#fff',
+    sunMoonDropShadow: 'drop-shadow(0 0 0.1rem #4e66ae)',
 };
 
 export const darkTheme = {
@@ -19,5 +20,6 @@ export const darkTheme = {
     secondaryLinkTextColor: '#000',
     imageFilter: 'invert(100%)',
     scrollbarBorder: '#c1c1c1',
-    scrollbarBackground: '#121212'
+    scrollbarBackground: '#121212',
+    sunMoonDropShadow: 'drop-shadow(0 0 0.1rem #FFD700)',
 };
