@@ -28,4 +28,8 @@ export const IconContainer = styled.div`
       pointer-events: none;
     }
   }
+
+  svg:hover{
+    filter: ${({ theme }) => theme.sunMoonDropShadow}
+  }
 `;
