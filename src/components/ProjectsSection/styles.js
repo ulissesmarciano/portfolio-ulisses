@@ -27,6 +27,10 @@ export const Container = styled.section`
         font-size: 1.75rem;
     }
 
+    .project-title {
+        margin-bottom: 3rem;
+    }
+
     .project-section {
         display: flex;
         gap: 4rem;
