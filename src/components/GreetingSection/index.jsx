@@ -3,7 +3,7 @@ import { useInView } from 'react-intersection-observer';
 import { Container } from './styles';
 
 import LinkItem from '../LinkItem';
-import { ContactHrefs } from '../../constants/ContactHrefs';
+import { ContactHrefs } from '../../constants/Hrefs';
 
 import AvatarUlisses from '../../assets/avatar/avatar-ulisses.jpg';
 import LongDashBorder from '../../assets/svg/long-dash-circle.svg';
