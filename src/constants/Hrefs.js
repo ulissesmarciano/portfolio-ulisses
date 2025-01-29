@@ -6,6 +6,8 @@ export const ContactHrefs = {
   email: "ulissesmarcianodev@gmail.com",
 };
 
-export const ProjectsHrefs = {
-    ccem: "",
+export const ProjectName = {
+    ccem: "site-react-ccem-escola-de-musica",
+    hubkut: "hubkut",
+    pokedex: "react-pokedex",
 };
