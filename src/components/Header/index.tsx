@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { Container } from './styles';
-import LinkItem from '../LinkItem';
-import useWindowSize from '../../hooks/useWindowSize';
-import SunMoonToggle from '../SunMoonToggle';
+import React, { useState } from "react";
+import { Container } from "./styles";
+import LinkItem from "../LinkItem/LinkItem";
+import useWindowSize from "../../hooks/useWindowSize";
+import SunMoonToggle from "../SunMoonToggle";
 
 const Header = ({ id, toggleTheme, isSun }) => {
   const [sidebar, setSidebar] = useState(false);
@@ -15,15 +15,17 @@ const Header = ({ id, toggleTheme, isSun }) => {
 
   const getLinkVariant = (defaultVariant) => {
     if (width >= 768) {
-      return defaultVariant === 'sidebarLink' ? 'headerPrimaryLink' : defaultVariant;
-    };
+      return defaultVariant === "sidebarLink"
+        ? "headerPrimaryLink"
+        : defaultVariant;
+    }
     return defaultVariant;
   };
 
   return (
-    <Container id='header'>
+    <Container id="header">
       <div className="header-container">
-        <h1 className='logo'>Ulisses Marciano</h1>
+        <h1 className="logo">Ulisses Marciano</h1>
         <nav>
           <input
             type="checkbox"
@@ -38,42 +40,39 @@ const Header = ({ id, toggleTheme, isSun }) => {
             </div>
           </label>
 
-          <ul className={sidebar ? 'active' : ''}>
+          <ul className={sidebar ? "active" : ""}>
             <li>
               <LinkItem
                 name="Sobre"
-                href={id = "#sobre"}
-                variant={getLinkVariant('sidebarLink')}
+                href={(id = "#sobre")}
+                variant={getLinkVariant("sidebarLink")}
                 onClick={handleLinkClick}
               />
             </li>
             <li>
               <LinkItem
                 name="Projetos"
-                href={id = "#projetos"}
-                variant={getLinkVariant('sidebarLink')}
+                href={(id = "#projetos")}
+                variant={getLinkVariant("sidebarLink")}
                 onClick={handleLinkClick}
               />
             </li>
             <li>
               <LinkItem
                 name="Habilidades"
-                href={id = "#habilidades"}
-                variant={getLinkVariant('sidebarLink')}
+                href={(id = "#habilidades")}
+                variant={getLinkVariant("sidebarLink")}
                 onClick={handleLinkClick}
               />
             </li>
             <li>
               <LinkItem
                 name="Contato"
-                href={id = "#contato"}
+                href={(id = "#contato")}
                 variant="headerSecondaryLink"
                 onClick={handleLinkClick}
               />
-              <SunMoonToggle
-                toggleTheme={toggleTheme}
-                isSun={isSun}
-              />
+              <SunMoonToggle toggleTheme={toggleTheme} isSun={isSun} />
             </li>
           </ul>
         </nav>
