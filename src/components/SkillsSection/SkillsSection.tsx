@@ -18,28 +18,16 @@ export const SkillsSection = () => {
       <h3>Habilidades</h3>
       <div className="skill-content">
         <SkillItem iconName="javascript" languageName="JavaScript" />
-        {/* <SkillItem 
-          iconName="typescript"
-          languageName="Typescript"
-        /> */}
-        {/* <SkillItem 
-          iconName="csharp"
-          languageName="CSharp"
-        /> */}
+        <SkillItem iconName="typescript" languageName="Typescript" />
+        <SkillItem iconName="java" languageName="Java" />
+        <SkillItem iconName="kotlin" languageName="Kotlin" />
         <SkillItem iconName="react" languageName="React.js" />
-        {/* <SkillItem 
-          iconName="angular"
-          languageName="Angular.js"
-        /> */}
+        <SkillItem iconName="nextjs" languageName="Next.js" />
+        <SkillItem iconName="spring" languageName="Spring Boot" />
         <SkillItem iconName="android" languageName="Android Dev" />
-        {/* <SkillItem 
-          iconName="dot-net"
-          languageName=".Net"
-        /> */}
         <SkillItem iconName="html5" languageName="HTML5" />
         <SkillItem iconName="css3" languageName="CSS3" />
         <SkillItem iconName="git" languageName="GIT" />
-        <SkillItem iconName="nodejs" languageName="Node.js" />
       </div>
     </Container>
   );
