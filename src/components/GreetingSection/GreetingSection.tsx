@@ -5,7 +5,7 @@ import { Container } from "./styles";
 import { LinkItem } from "../LinkItem/";
 import { ContactHrefs } from "../../constants/Hrefs";
 
-import AvatarUlisses from "../../assets/avatar/avatar-ulisses.png";
+import AvatarUlisses from "../../assets/avatar/avatar-ulisses.jpg";
 import LongDashBorder from "../../assets/svg/long-dash-circle.svg";
 import SolidBorder from "../../assets/svg/circle.svg";
 import AbstractDashBorder from "../../assets/svg/absctract-circle.svg";

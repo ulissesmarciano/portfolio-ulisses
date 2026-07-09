@@ -1,8 +1,9 @@
+import type { linkStyles } from "../../constants/linkStyles";
 import { Container } from "./styles";
 
 interface LinkItemProps {
   name: string;
-  variant: "greetingsContactLink";
+  variant: keyof typeof linkStyles;
   href?: string;
   src?: string;
   alt?: string;

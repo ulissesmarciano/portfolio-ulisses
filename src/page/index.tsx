@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from './styles';
-import Header from '../components/Header';
+import Header from '../components/Header/Header';
 import AboutMeSection from '../components/AboutMeSection';
 import SkillsSection from '../components/SkillsSection';
 import ProjectsSection from '../components/ProjectsSection';

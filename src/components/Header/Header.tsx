@@ -1,10 +1,19 @@
 import React, { useState } from "react";
 import { Container } from "./styles";
-import LinkItem from "../LinkItem/LinkItem";
+import { LinkItem } from "../LinkItem";
 import useWindowSize from "../../hooks/useWindowSize";
 import SunMoonToggle from "../SunMoonToggle";
+import type { linkStyles } from "../../constants/linkStyles";
 
-const Header = ({ id, toggleTheme, isSun }) => {
+interface HeaderProps {
+  id?: string;
+  toggleTheme: () => void;
+  isSun: boolean;
+}
+
+type LinkVariant = keyof typeof linkStyles;
+
+export const Header = ({ id, toggleTheme, isSun }: HeaderProps) => {
   const [sidebar, setSidebar] = useState(false);
   const { width } = useWindowSize();
   const showSidebar = () => setSidebar(!sidebar);
@@ -13,12 +22,13 @@ const Header = ({ id, toggleTheme, isSun }) => {
     setSidebar(false);
   };
 
-  const getLinkVariant = (defaultVariant) => {
+  const getLinkVariant = (defaultVariant: LinkVariant): LinkVariant => {
     if (width >= 768) {
       return defaultVariant === "sidebarLink"
         ? "headerPrimaryLink"
         : defaultVariant;
     }
+
     return defaultVariant;
   };
 
@@ -80,5 +90,3 @@ const Header = ({ id, toggleTheme, isSun }) => {
     </Container>
   );
 };
-
-export default Header;
