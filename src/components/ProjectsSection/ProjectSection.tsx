@@ -1,12 +1,12 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import { Container } from "./styles";
-import ProjectItem from "../ProjectItem";
 import { ProjectName } from "../../constants/Hrefs";
 
 import PokedexImage from "../../assets/projectarts/reactpokedex.png";
 import RubkutImage from "../../assets/projectarts/reacthubkut.png";
 import SiteCCEMImage from "../../assets/projectarts/siteccem.png";
+import { ProjectItem } from "../ProjectItem";
 
 export const ProjectsSection = () => {
   const { ref, inView } = useInView({
