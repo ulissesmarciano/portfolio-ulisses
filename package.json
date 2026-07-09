@@ -1,6 +1,7 @@
 {
   "name": "ulisses-potfolio",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -44,6 +45,9 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@types/node": "^26.1.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.3",
     "eslint": "^10.6.0",
     "eslint-plugin-react": "^7.37.5",
@@ -52,6 +56,7 @@
     "gh-pages": "^4.0.0",
     "globals": "^17.7.0",
     "prettier": "^3.9.5",
+    "typescript": "^7.0.2",
     "vite": "^8.1.4"
   }
 }
