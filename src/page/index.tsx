@@ -1,6 +1,5 @@
 import React from "react";
 import { Container } from "./styles";
-import SkillsSection from "../components/SkillsSection";
 import {
   AboutMeSection,
   ContactSection,
@@ -8,6 +7,7 @@ import {
   Header,
   ProjectsSection,
   Footer,
+  SkillsSection,
 } from "../components";
 
 interface PortfolioSectionProps {
