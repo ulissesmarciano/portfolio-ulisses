@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "./styles";
 
-const Footer = ({ id }: { id: string }) => {
+export const Footer = ({ id }: { id: string }) => {
   return (
     <Container>
       <div className="bottom-info-section">
@@ -13,5 +13,3 @@ const Footer = ({ id }: { id: string }) => {
     </Container>
   );
 };
-
-export default Footer;

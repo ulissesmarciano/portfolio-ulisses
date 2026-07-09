@@ -1,13 +1,13 @@
 import React from "react";
 import { Container } from "./styles";
 import SkillsSection from "../components/SkillsSection";
-import Footer from "../components/Footer";
 import {
   AboutMeSection,
   ContactSection,
   GreetingsSection,
   Header,
   ProjectsSection,
+  Footer,
 } from "../components";
 
 interface PortfolioSectionProps {
