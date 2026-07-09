@@ -21,12 +21,7 @@ export const LinkItem = ({
   onClick,
 }: LinkItemProps) => {
   return (
-    <Container
-      $variant={variant}
-      href={href}
-      target={target}
-      onClick={onClick}
-    >
+    <Container $variant={variant} href={href} target={target} onClick={onClick}>
       <img src={src} alt={alt} />
       {name}
     </Container>

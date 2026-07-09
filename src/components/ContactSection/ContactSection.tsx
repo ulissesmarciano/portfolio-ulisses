@@ -2,14 +2,14 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import { Container } from "./styles";
 
-import LinkItem from "../LinkItem/LinkItem";
+import { LinkItem } from "../LinkItem";
 import { ContactHrefs } from "../../constants/Hrefs";
 
 import GithubIcon from "../../assets/icons/github-black.svg";
 import LinkedInIcon from "../../assets/icons/linkedin-black.svg";
 import WhatsappIcon from "../../assets/icons/whatsapp-black.svg";
 
-const ContactSection = () => {
+export const ContactSection = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -61,5 +61,3 @@ const ContactSection = () => {
     </Container>
   );
 };
-
-export default ContactSection;

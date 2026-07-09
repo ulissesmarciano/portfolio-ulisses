@@ -4,7 +4,7 @@ import Header from '../components/Header/Header';
 import AboutMeSection from '../components/AboutMeSection';
 import SkillsSection from '../components/SkillsSection';
 import ProjectsSection from '../components/ProjectsSection';
-import ContactSection from '../components/ContactSection';
+import ContactSection from '../components/ContactSection/ContactSection';
 import Footer from '../components/Footer';
 import { GreetingsSection } from '../components';
 
