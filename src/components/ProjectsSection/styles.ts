@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from "styled-components";
 
 const slideUp = keyframes`
   from {
@@ -12,54 +12,53 @@ const slideUp = keyframes`
 `;
 
 export const Container = styled.section`
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 1s ease-out;
-    scroll-margin-top: 200px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease-out;
+  scroll-margin-top: 200px;
 
-    &.is-visible {
-        animation: ${slideUp} 1s forwards;
+  &.is-visible {
+    animation: ${slideUp} 1s forwards;
+  }
+
+  margin-bottom: 8rem;
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  .project-title {
+    margin-bottom: 3rem;
+  }
+
+  .project-section {
+    display: flex;
+    gap: 4rem;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    ::-webkit-scrollbar {
+      height: 0.8rem;
+      background: white;
     }
 
-    margin-bottom: 8rem;
-
-    h3 {
-        font-size: 1.75rem;
+    ::-webkit-scrollbar-track {
+      background-color: transparent;
+      border: solid 3px #e0e0e0;
+      border-radius: 1rem;
     }
 
-    .project-title {
-        margin-bottom: 3rem;
+    ::-webkit-scrollbar-thumb {
+      background: #c1c1c1;
+      border-radius: 1rem;
     }
+  }
 
+  @media (min-width: 768px) {
     .project-section {
-        display: flex;
-        gap: 4rem;
-        flex-direction: row;
-        overflow-x: scroll;
-        overflow-y: hidden;
-
-        ::-webkit-scrollbar {
-            height: 0.8rem;
-            background: white;
-        }
-
-        ::-webkit-scrollbar-track {
-            background-color: transparent;
-            border: solid 3px #e0e0e0;
-            border-radius: 1rem;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #c1c1c1;
-            border-radius: 1rem;
-        }
+      flex-direction: column;
+      overflow-x: hidden;
     }
-
-    @media (min-width: 768px) {
-        .project-section {
-            flex-direction: column;
-            overflow-x: hidden;
-        }
-    }
+  }
 `;
-

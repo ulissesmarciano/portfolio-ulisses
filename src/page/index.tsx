@@ -1,25 +1,32 @@
-import React from 'react';
-import { Container } from './styles';
-import Header from '../components/Header/Header';
-import AboutMeSection from '../components/AboutMeSection';
-import SkillsSection from '../components/SkillsSection';
-import ProjectsSection from '../components/ProjectsSection';
-import ContactSection from '../components/ContactSection/ContactSection';
-import Footer from '../components/Footer';
-import { GreetingsSection } from '../components';
+import React from "react";
+import { Container } from "./styles";
+import SkillsSection from "../components/SkillsSection";
+import Footer from "../components/Footer";
+import {
+  AboutMeSection,
+  ContactSection,
+  GreetingsSection,
+  Header,
+  ProjectsSection,
+} from "../components";
 
-const PortfolioSection = ({ toggleTheme, isSun }) => {
+interface PortfolioSectionProps {
+  toggleTheme: () => void;
+  isSun: boolean;
+}
+
+const PortfolioSection = ({ toggleTheme, isSun }: PortfolioSectionProps) => {
   return (
     <Container>
       <Header toggleTheme={toggleTheme} isSun={isSun} />
-      <main className='main-body'>
+      <main className="main-body">
         <GreetingsSection />
         <AboutMeSection />
         <ProjectsSection />
         <SkillsSection />
         <ContactSection />
       </main>
-      <Footer />
+      <Footer id="footer" />
     </Container>
   );
 };

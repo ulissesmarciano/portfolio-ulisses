@@ -1,13 +1,15 @@
-import React from 'react';
-import { Container } from './styles';
+import React from "react";
+import { Container } from "./styles";
 
-const Footer = ({id}) => {
+const Footer = ({ id }: { id: string }) => {
   return (
     <Container>
-        <div className='bottom-info-section'>
-          <h2><a href={id="#header"}>Ulisses Marciano</a></h2>
-          <p>© ULISSES GONÇALVES 2025</p>
-        </div>
+      <div className="bottom-info-section">
+        <h2>
+          <a href={(id = "#header")}>Ulisses Marciano</a>
+        </h2>
+        <p>© ULISSES GONÇALVES 2025</p>
+      </div>
     </Container>
   );
 };
