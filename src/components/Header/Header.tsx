@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Container } from "./styles";
 import { LinkItem } from "../LinkItem";
 import useWindowSize from "../../hooks/useWindowSize";
-import SunMoonToggle from "../SunMoonToggle";
 import type { linkStyles } from "../../constants/linkStyles";
+import { SunMoonToggle } from "../SunMoonToggle";
 
 interface HeaderProps {
   id?: string;
