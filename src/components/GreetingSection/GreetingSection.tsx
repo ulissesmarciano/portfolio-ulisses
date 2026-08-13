@@ -24,7 +24,7 @@ export const GreetingsSection = () => {
       <div className="summary-container">
         <div className="presentation-container">
           <p className="summary-sentence">
-            Sou um <span>desenvolvedor font-end</span>, com treinamento
+            Sou um <span>desenvolvedor full-stack</span>, com treinamento
             certificado e também <span>desenvolvo aplicativos Android</span>.
           </p>
         </div>
